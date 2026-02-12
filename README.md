@@ -5,7 +5,7 @@
 
 # 🎨 Jiya The Coolartist — Art Portfolio Website
 
-Live Demo: https://jiyabatra.github.io/ArtPortfolio-jtc/  
+Live Demo: https://jiyabatra.github.io/ArtPortfolio-jtc/
 
 This repo contains the source for **“Jiya The Coolartist”**, a portfolio website showcasing my art styles, materials, journey, and tutorial
 
