@@ -1,0 +1,127 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Animated Gradient Background */
+body{
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #fbc2eb, #a6c1ee, #fddb92, #d4fc79);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Main Contact Card */
+.contact-container{
+    width: 90%;
+    max-width: 750px;
+    padding: 40px;
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    text-align: center;
+
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Headings */
+.contact-heading,
+.example-heading{
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Instagram Button */
+.instagram{
+    display: inline-block;
+    margin: 20px 0;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    transition: 0.4s;
+}
+
+.instagram:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Info text */
+.jiya{
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Questions container */
+.questions{
+    margin-top: 15px;
+}
+
+/* Question cards */
+.questions p{
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+/* Hover effect */
+.questions p:hover{
+    transform: translateY(-5px);
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    color: white;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .contact-container{
+        padding: 25px;
+    }
+
+    .contact-heading,
+    .example-heading{
+        font-size: 1.5rem;
+    }
+}
