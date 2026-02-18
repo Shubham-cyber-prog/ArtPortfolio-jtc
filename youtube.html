@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Studio | Jiya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Art Studio</h1>
+</header>
+
+<section class="container">
+    <h2>Learn & Create with Jiya</h2>
+    <div id="video-container" class="video-grid"></div>
+</section>
+
+<script>
+const API_KEY = "AIzaSyAjUPtaIK3YkYN2-blA3giqu94d4o4qhPs";
+const CHANNEL_ID = "UC1x8-hhCnukw437Sx8emtlg";
+
+async function fetchVideos() {
+    const response = await fetch(
+        `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=27`
+    );
+
+    const data = await response.json();
+    console.log(data); // 👈 ADD THIS
+
+    if (!data.items) {
+        console.error("API Error:", data);
+        return;
+    }
+
+    const container = document.getElementById("video-container");
+
+    data.items.forEach(item => {
+    if (item.id.videoId) {
+
+        const videoCard = document.createElement("div");
+        videoCard.classList.add("video-card");
+
+        videoCard.innerHTML = `
+            <a href="https://www.youtube.com/watch?v=${item.id.videoId}" target="_blank">
+                <img src="${item.snippet.thumbnails.medium.url}" alt="${item.snippet.title}">
+                <p>${item.snippet.title}</p>
+            </a>
+        `;
+
+        container.appendChild(videoCard);
+    }
+});
+}
+
+
+fetchVideos();
+</script>
+
+</body>
+</html>
