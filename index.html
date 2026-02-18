@@ -9,22 +9,53 @@
 </head>
 <body>
 
-    <!-- Header / Hero Section -->
-    <header>
-        <div>
-            <h1>jiya_the_coolartist</h1>
+    <div class="nav-sticky">
+        <div class="nav-pill" id="nav-pill">
+
+            <a class="logo" href="#">
+                <div class="logo-orb">🎨</div>
+                <div class="logo-text">
+                    <span class="logo-name">Jiya</span>
+                    <span class="logo-tag">Art Portfolio</span>
+                </div>
+            </a>
+
+            <div class="nav-center">
+                <a href="#" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="youtube.html">Art Studio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-right">
+                <a class="btn-ghost" href="contact.html">Get in Touch</a>
+                <div class="sep"></div>
+                <a class="btn-primary" href="https://www.youtube.com/@jiya_the_coolartist/videos" target="_blank">
+                    <span class="play">
+                        <svg viewBox="0 0 8 10" xmlns="http://www.w3.org/2000/svg"><path d="M0 0L8 5L0 10V0Z"/></svg>
+                    </span>
+                    Watch Now
+                </a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
 
-        <!-- Navigation -->
-        <nav class="nav">
-            <a class="home" target="_blank" href="https://www.youtube.com/@jiya_the_coolartist/videos">HOME</a>
-            <a class="about" href="about.html">ABOUT</a>
-            <a class="contact" href="contact.html">CONTACT</a>
-            <a class="youtube" href="youtube.html">ART STUDIO</a>
-        </nav>
-    </header>
+        <div class="mobile-drop" id="mobile-drop">
+            <a href="#"><span class="m-ico">🏠</span> Home</a>
+            <a href="about.html"><span class="m-ico">🌸</span> About</a>
+            <a href="youtube.html"><span class="m-ico">🖌️</span> Art Studio</a>
+            <a href="contact.html"><span class="m-ico">💌</span> Contact</a>
+            <a class="m-cta" href="https://www.youtube.com/@jiya_the_coolartist/videos" target="_blank">
+                ▶ Watch Now on YouTube
+            </a>
+        </div>
+    </div>
 
-    <!-- Art Learning Section -->
+    <div class="hero">✦ your content here ✦</div>
+
     <main class="container">
         <section class="art-info black">
             <h2>What kind of art you can learn from Jiya_the_Coolartist?</h2>
@@ -39,52 +70,51 @@
             <h3>Required Materials</h3>
             <div class="table-container">
                 <table>
-                <thead>
-                    <tr>
-                        <th>S.No</th>
-                        <th>Art</th>
-                        <th>Material</th>
-                        <th>Alternative</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="S.No">1</td>
-                        <td data-label="Art">Oil Pastel Painting</td>
-                        <td data-label="Material">Oil Pastels</td>
-                        <td data-label="Alternative">Crayon or Wax Colors (blend with pressure)</td>
-                    </tr>
-                    <tr>
-                        <td data-label="S.No">2</td>
-                        <td data-label="Art">Watercolor Painting</td>
-                        <td data-label="Material">Watercolor</td>
-                        <td data-label="Alternative">Affordable, easily available</td>
-                    </tr>
-                    <tr>
-                        <td data-label="S.No">3</td>
-                        <td data-label="Art">Pencil Shading</td>
-                        <td data-label="Material">Shading Pencils</td>
-                        <td data-label="Alternative">Simple HB Pencil</td>
-                    </tr>
-                    <tr>
-                        <td data-label="S.No">4</td>
-                        <td data-label="Art">Mandala</td>
-                        <td data-label="Material">Pilot Black Pen</td>
-                        <td data-label="Alternative">Simple Ballpoint or Gel Pen</td>
-                    </tr>
-                    <tr>
-                        <td data-label="S.No">5</td>
-                        <td data-label="Art">Doodle</td>
-                        <td data-label="Material">Pilot Black Pen</td>
-                        <td data-label="Alternative">Simple Ballpoint or Gel Pen</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Art</th>
+                            <th>Material</th>
+                            <th>Alternative</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="S.No">1</td>
+                            <td data-label="Art">Oil Pastel Painting</td>
+                            <td data-label="Material">Oil Pastels</td>
+                            <td data-label="Alternative">Crayon or Wax Colors (blend with pressure)</td>
+                        </tr>
+                        <tr>
+                            <td data-label="S.No">2</td>
+                            <td data-label="Art">Watercolor Painting</td>
+                            <td data-label="Material">Watercolor</td>
+                            <td data-label="Alternative">Affordable, easily available</td>
+                        </tr>
+                        <tr>
+                            <td data-label="S.No">3</td>
+                            <td data-label="Art">Pencil Shading</td>
+                            <td data-label="Material">Shading Pencils</td>
+                            <td data-label="Alternative">Simple HB Pencil</td>
+                        </tr>
+                        <tr>
+                            <td data-label="S.No">4</td>
+                            <td data-label="Art">Mandala</td>
+                            <td data-label="Material">Pilot Black Pen</td>
+                            <td data-label="Alternative">Simple Ballpoint or Gel Pen</td>
+                        </tr>
+                        <tr>
+                            <td data-label="S.No">5</td>
+                            <td data-label="Art">Doodle</td>
+                            <td data-label="Material">Pilot Black Pen</td>
+                            <td data-label="Alternative">Simple Ballpoint or Gel Pen</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <p>Learn any of these art styles on <a href="https://www.youtube.com/results?search_query=jiya_the_coolartist" target="_blank">YouTube (my little artist)</a></p>
 
-            <!-- Art References -->
             <h3>Some art references</h3>
             <div class="art-cards">
                 <a class="mandala" href="mandalaart.html">Mandala Art</a>
@@ -95,7 +125,6 @@
             </div>
         </section>
 
-        <!-- Artist Journey -->
         <section class="journey">
             <h2>Let's know something about her journey</h2>
             <p>
@@ -116,21 +145,16 @@
         </section>
     </main>
 
-    <!-- ═══════════════ FOOTER ═══════════════ -->
     <footer class="site-footer">
 
-        <!-- Blobs -->
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
         <div class="blob blob-3"></div>
 
-        <!-- Brush stroke border -->
         <div class="footer-brush"></div>
 
-        <!-- Scroll to top -->
         <a class="footer-scroll-top" href="#" title="Back to top">↑</a>
 
-        <!-- Newsletter -->
         <div class="footer-nl">
             <div class="footer-nl-left">
                 <div class="footer-nl-icon">🎨</div>
@@ -145,10 +169,8 @@
             </div>
         </div>
 
-        <!-- Main Grid -->
         <div class="footer-grid">
 
-            <!-- Brand -->
             <div>
                 <a href="index.html" class="footer-brand-link">
                     <div class="footer-palette">🎨</div>
@@ -176,7 +198,6 @@
                 </div>
             </div>
 
-            <!-- Explore -->
             <div class="footer-nav-col">
                 <h4>Explore</h4>
                 <ul>
@@ -187,7 +208,6 @@
                 </ul>
             </div>
 
-            <!-- Gallery -->
             <div class="footer-nav-col">
                 <h4>Art Gallery</h4>
                 <ul>
@@ -199,7 +219,6 @@
                 </ul>
             </div>
 
-            <!-- Connect -->
             <div class="footer-connect-col">
                 <h4>Connect With Me</h4>
                 <div class="footer-social-list">
@@ -235,10 +254,8 @@
 
         </div>
 
-        <!-- Divider -->
         <div class="footer-divider"></div>
 
-        <!-- Bottom bar -->
         <div class="footer-bottom">
             <div class="footer-copy">
                 &copy; 2026 <a href="index.html">Jiya The Coolartist</a> &nbsp;|&nbsp; All Rights Reserved
@@ -254,16 +271,53 @@
         </div>
 
     </footer>
-    <!-- ═══════════════ END FOOTER ═══════════════ -->
 
-    <div class="circle"></div>
+    <div class="circle" id="customCursor"></div>
 
     <script>
-    const cursor = document.querySelector(".circle");
-    document.addEventListener("mousemove", (e) => {
-        cursor.style.left = e.clientX + "px";
-        cursor.style.top = e.clientY + "px";
-    });
+        const customCursor = document.getElementById('customCursor');
+        let mouseX = 0;
+        let mouseY = 0;
+        let cursorX = 0;
+        let cursorY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateCursor() {
+            const speed = 0.15;
+            
+            cursorX += (mouseX - cursorX) * speed;
+            cursorY += (mouseY - cursorY) * speed;
+            
+            customCursor.style.left = cursorX + 'px';
+            customCursor.style.top = cursorY + 'px';
+            
+            requestAnimationFrame(animateCursor);
+        }
+
+        animateCursor();
+
+        window.addEventListener('scroll', () => {
+            document.getElementById('nav-pill').classList.toggle('scrolled', window.scrollY > 10);
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const mobileDrop = document.getElementById('mobile-drop');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileDrop.classList.toggle('open');
+        });
+
+        document.querySelectorAll('.nav-center a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelectorAll('.nav-center a').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
     </script>
 </body>
 </html>
