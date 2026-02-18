@@ -10,6 +10,7 @@
 
 /* Animated Gradient Background */
 body {
+    overflow-x: hidden;
     min-height: 100vh;
     background: linear-gradient(-45deg, #fbc2eb, #a6c1ee, #fddb92, #d4fc79);
     background-size: 400% 400%;
@@ -94,6 +95,7 @@ table {
     margin-top: 15px;
     overflow: hidden;
     border-radius: 15px;
+    min-width: 600px; /* prevents squeezing too much */
 }
 
 table th {
@@ -109,6 +111,12 @@ table td {
 
 table tr:nth-child(even) {
     background: rgba(255,255,255,0.5);
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Art Cards */
@@ -237,3 +245,35 @@ body{
     100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+@media (max-width: 600px) {
+
+    table thead {
+        display: none;
+    }
+
+    table, table tbody, table tr, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+        background: rgba(255,255,255,0.6);
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    table td {
+        text-align: left;
+        padding: 8px 10px;
+        position: relative;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 4px;
+        color: #ff4081;
+    }
+}
